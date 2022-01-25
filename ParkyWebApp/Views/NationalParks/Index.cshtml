@@ -1,0 +1,16 @@
+﻿@*
+@model ICollection<ParkyAPI.Model.NationalPark>
+
+<h3>
+    These are your parks
+</h3>
+
+<li>
+    @foreach (var park in Model)
+    {
+        <ul>@park.Id - @park.Name</ul>
+    }
+</li>
+*@
+
+
